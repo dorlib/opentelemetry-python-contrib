@@ -256,7 +256,7 @@ class TestUtils(IsolatedAsyncioTestCase):
         extract_bootstrap_servers: mock.MagicMock,
         _enrich_getmany_poll_span: mock.MagicMock,
         _enrich_getmany_topic_span: mock.MagicMock,
-        _create_consumer_span: mock.MagicMock,
+        _create_consumer_span: mock.AsyncMock,
         extract: mock.MagicMock,
     ) -> None:
         tracer = mock.MagicMock()
